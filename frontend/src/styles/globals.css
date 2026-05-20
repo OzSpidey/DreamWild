@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-crimson:  'Crimson Text', Georgia, serif;
+  --font-inter:    'Inter', system-ui, sans-serif;
+  --gold:          #c9a84c;
+  --ink:           #080608;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #0f0d0a;
+  color: #e8e0c8;
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: rgba(201,168,76,0.35); color: #faf8f1; }
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #1a1714; }
+::-webkit-scrollbar-thumb { background: #3d3420; border-radius: 3px; }
+
+/* Chapter prose */
+.prose-story {
+  font-family: var(--font-crimson);
+  font-size: 1.2rem;
+  line-height: 1.85;
+  color: #e8e0c8;
+}
+.prose-story p { margin-bottom: 1.2em; }
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.cursor-blink::after {
+  content: '|';
+  margin-left: 1px;
+  animation: cursor-blink 1s step-end infinite;
+  color: var(--gold);
+}
