@@ -1,6 +1,6 @@
 # DreamWild
 
-> **Turn a two-line idea into a fully illustrated, narrated multi-chapter story — written live by Claude, one word at a time.**
+> **Turn a two-line idea into a fully illustrated, narrated multi-chapter story, written live by Claude, one word at a time.**
 
 DreamWild is an AI storytelling platform that generates complete multi-chapter stories with per-chapter scene illustrations and audio narration. Pick a genre, describe your protagonist and world, then watch Claude write each chapter in real time while fal.ai paints the scenes and OpenAI reads them aloud.
 
@@ -16,25 +16,25 @@ DreamWild is an AI storytelling platform that generates complete multi-chapter s
 ## Screenshots
 
 ### Landing Page
-![Landing page — hero section with DreamWild logo, tagline "Where Stories Run Wild", and call-to-action buttons](./screenshots/landing.png)
+![Landing page, hero section with DreamWild logo, tagline "Where Stories Run Wild", and call-to-action buttons](./screenshots/landing.png)
 
 *Dark parchment aesthetic with gold accents. Feature cards highlight multi-chapter stories, Claude prose, AI illustrations, and audio narration.*
 
 ---
 
 ### Story Forge Wizard
-![6-step story creation wizard — genre selection grid showing Fantasy, Sci-Fi, Mystery, Romance, Horror, Adventure options](./screenshots/forge-genre.png)
+![6-step story creation wizard, genre selection grid showing Fantasy, Sci-Fi, Mystery, Romance, Horror, Adventure options](./screenshots/forge-genre.png)
 
 *Step 1 of 6: genre picker. Progress bar at top tracks wizard position.*
 
-![Forge wizard step 4 — protagonist and setting text areas with gold focus rings](./screenshots/forge-characters.png)
+![Forge wizard step 4, protagonist and setting text areas with gold focus rings](./screenshots/forge-characters.png)
 
 *Step 4: protagonist and setting inputs. These seed Claude's story bible for the entire narrative.*
 
 ---
 
-### Live Story Reading — Streaming
-![Story reading page — left chapter nav sidebar, main content showing Chapter 1 complete with illustration and Chapter 2 actively streaming tokens](./screenshots/read-streaming.png)
+### Live Story Reading, Streaming
+![Story reading page, left chapter nav sidebar, main content showing Chapter 1 complete with illustration and Chapter 2 actively streaming tokens](./screenshots/read-streaming.png)
 
 *Chapters appear word-by-word as Claude streams. Each chapter has its own illustration (fal.ai Flux) and audio player (OpenAI TTS). The left sidebar shows chapter status with live indicators.*
 
@@ -51,12 +51,12 @@ DreamWild is an AI storytelling platform that generates complete multi-chapter s
 
 You fill in a form. DreamWild does the rest:
 
-1. **Outline** — Claude generates a chapter-by-chapter story outline with summaries and scene descriptions
-2. **Write** — Each chapter is streamed token-by-token directly to your screen
-3. **Illustrate** — fal.ai Flux Schnell generates a scene image per chapter in parallel
-4. **Narrate** — OpenAI TTS renders each chapter as audio in the voice matched to your audience age
-5. **Remember** — A living "story bible" is updated after each chapter so characters, world rules, and plot threads stay consistent
-6. **Save** — Everything lives in your personal library, resumable any time
+1. **Outline**, Claude generates a chapter-by-chapter story outline with summaries and scene descriptions
+2. **Write**, Each chapter is streamed token-by-token directly to your screen
+3. **Illustrate**, fal.ai Flux Schnell generates a scene image per chapter in parallel
+4. **Narrate**, OpenAI TTS renders each chapter as audio in the voice matched to your audience age
+5. **Remember**, A living "story bible" is updated after each chapter so characters, world rules, and plot threads stay consistent
+6. **Save**, Everything lives in your personal library, resumable any time
 
 ---
 
@@ -65,15 +65,15 @@ You fill in a form. DreamWild does the rest:
 | Feature | Detail |
 |---|---|
 | **3–10 chapters** | User-controlled length, each 700–900 words |
-| **Story bible continuity** | Claude reads a JSON continuity doc before writing each chapter — no character flip-flops |
+| **Story bible continuity** | Claude reads a JSON continuity doc before writing each chapter, no character flip-flops |
 | **5 genres** | Fantasy, Sci-Fi, Mystery, Romance, Horror, Adventure, Thriller, Fairy-Tale |
 | **5 tones** | Whimsical, Dark, Epic, Humorous, Suspenseful, Romantic |
 | **4 reading ages** | Children, Middle Grade, Young Adult, Adult (affects vocabulary, voice actor, complexity) |
 | **5 image styles** | Illustrated, Realistic, Fantasy Art, Noir, Watercolor |
-| **Real-time SSE** | Tokens stream directly from Claude → FastAPI → browser — no polling |
+| **Real-time SSE** | Tokens stream directly from Claude → FastAPI → browser, no polling |
 | **Parallel assets** | Image + audio generated concurrently while text streams |
 | **Supabase Storage** | All images and audio stored permanently, not ephemeral URLs |
-| **Full auth** | Supabase JWT — signup, login, your stories stay yours |
+| **Full auth** | Supabase JWT, signup, login, your stories stay yours |
 
 ---
 
@@ -386,7 +386,7 @@ Update `CORS_ORIGINS` in backend env vars to include your Vercel URL.
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT, see [LICENSE](LICENSE)
 
 ---
 
